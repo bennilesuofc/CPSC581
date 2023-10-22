@@ -1,5 +1,5 @@
 # Site settings
-title: CPSC 581 Projects
+title: CPSC 581
 author:
   name: Benjamin Niles
 description: "Projects page for CPSC 581 class"
@@ -9,7 +9,9 @@ remote_theme: pages-themes/slate@v0.2.0
 plugins:
 - jekyll-remote-theme # add this line to the plugins list if you already have one
 
-navbar-links:
+header_pages:
   Projects:
     -Project 1: "https://habitual-noiseless-trombone.glitch.me/"
     -Project 2: "project2.html"
+
+copyright: "Copyright (c){currentYear} {author}"
