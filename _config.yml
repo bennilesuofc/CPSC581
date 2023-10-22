@@ -1,15 +1,16 @@
 # Site settings
 title: CPSC 581
-author:
-  name: Benjamin Niles
-description: "Projects page for CPSC 581 class"
+author: Benjamin Niles
+description: "Projects page"
 
 # Build settings
 theme: minima
 
 navbar-links:
-  Projects:
-    -Project 1: "https://habitual-noiseless-trombone.glitch.me/"
-    -Project 2: "project2.html"
+  -Projects:
+    -title: Project 1
+    url: "https://habitual-noiseless-trombone.glitch.me/"
+    -title: Project 2
+    url: "project2.html"
 
 copyright: "Copyright (c){currentYear} {author}"
