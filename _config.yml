@@ -5,11 +5,9 @@ author:
 description: "Projects page for CPSC 581 class"
 
 # Build settings
-remote_theme: pages-themes/slate@v0.2.0
-plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
+theme: minima
 
-header_pages:
+navbar-links:
   Projects:
     -Project 1: "https://habitual-noiseless-trombone.glitch.me/"
     -Project 2: "project2.html"
