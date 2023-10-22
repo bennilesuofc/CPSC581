@@ -5,12 +5,3 @@ description: "Projects page"
 
 # Build settings
 theme: minima
-
-navbar-links:
-  -Projects:
-    -title: Project 1
-    url: "https://habitual-noiseless-trombone.glitch.me/"
-    -title: Project 2
-    url: "project2.html"
-
-copyright: "Copyright (c){currentYear} {author}"
