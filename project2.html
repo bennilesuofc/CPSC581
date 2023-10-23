@@ -2,6 +2,145 @@
 layout: default
 title: Project 2
 ---
+<head>
+<!image slideshow code from https://www.w3schools.com/howto/howto_js_slideshow.asp>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 300px;
+  height:400px;
+  position: relative;
+  margin: auto;
+  border:1px solid black;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+</style>
+</head>
 <body>
-  <p>Project 2</p>
+
+<h2 style="text-align:center">Topic 1</h2>
+  
+<h3>demo video</h3>
+<video width="300" height="400" autoplay="muted" controls>
+  <source src="h" type="video/mp4">
+</video>
+  
+<div>
+  <a href="h" target="_blank">Link to Demo</a>
+  <a href="h" target="_blank">Link to Source Code</a>
+</div>
+
+<p>1st writeup goes here</p>
+<p>Sketches:</p>
+  
+<div class="slideshow-container">
+  <div class="mySlides1">
+    <img src="Gesture Sketches.jpg" alt="touch/gesture sketches" style="width:100%">
+    <div class="text">Touch/Gesture Sketches</div>
+  </div>
+
+  <div class="mySlides1">
+    <img src="Detail Sketches.jpg" alt="touch/gesture detail sketches" style="width:100%">
+    <div class="text">Touch/Gesture Detail Sketches</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+</div>
+
+  
+<hr>
+<h2 style="text-align:center">Topic 2</h2>
+  
+<h3>demo video</h3>
+<video width="718" height="347" autoplay="muted" controls>
+  <source src="h" type="video/mp4">
+</video>
+  
+<div>
+  <a href="h" target="_blank">Link to Demo</a>
+  <a href="h" target="_blank">Link to Source Code</a>
+</div>
+  
+<p>2nd writeup goes here</p>
+<p>Sketches:</p>
+<div class="slideshow-container">
+  <div class="mySlides2">
+    <img src="Sensor Sketches.jpg" alt="sensor sketches" style="width:100%">
+    <div class="text">Sensor Sketches</div>
+  </div>
+
+  <div class="mySlides2">
+    <img src="Sensor Detail.jpg" alt="sensor detail sketches" style="width:100%">
+    <div class="text">Sensor Detail Sketches</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+</div>
+
+<script>
+let slideIndex = [1,1];
+let slideId = ["mySlides1", "mySlides2"]
+showSlides(1, 0);
+showSlides(1, 1);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  let i;
+  let x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 1) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+
 </body>
