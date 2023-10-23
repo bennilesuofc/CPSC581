@@ -60,29 +60,32 @@ img {vertical-align: middle;}
 </head>
 <body>
 
-<h2 style="text-align:center">Topic 1</h2>
-  
+<h2 style="text-align:center">Touch/Gesture-Based Unlock</h2>
+<h3>Press-and-Hold to Unlock</h3>
+<div style="display:flex;flex-direction:column;align-items:center;">
 <h3>demo video</h3>
 <video width="300" height="400" autoplay="muted" controls>
-  <source src="h" type="video/mp4">
+  <source src="assets/project2/Gesture Demo.mp4" type="video/mp4">
 </video>
   
 <div>
-  <a href="h" target="_blank">Link to Demo</a>
-  <a href="h" target="_blank">Link to Source Code</a>
+  <a href="https://candy-sweltering-thyme.glitch.me/touch_unlock.html" target="_blank">Link to Demo</a>
+  <a href="https://glitch.com/edit/#!/candy-sweltering-thyme?path=touch_unlock.html" target="_blank">Link to Source Code</a>
 </div>
-
-<p>1st writeup goes here</p>
+</div>
+<p>I came up with this idea by considering the types of input possible on a touchscreen. 
+  It’s a two-dimensional surface, so I thought it might be interesting to try making an idea that uses the dimension of time as well. 
+  I chose the Press-and-Hold idea because it seemed like it would be practical as an actual unlocking mechanism, while still not being too difficult to implement.</p>
 <p>Sketches:</p>
   
 <div class="slideshow-container">
   <div class="mySlides1">
-    <img src="Gesture Sketches.jpg" alt="touch/gesture sketches" style="width:100%">
+    <img src="assets/project2/Gesture Sketches.jpg" alt="touch/gesture sketches" style="width:100%">
     <div class="text">Touch/Gesture Sketches</div>
   </div>
 
   <div class="mySlides1">
-    <img src="Detail Sketches.jpg" alt="touch/gesture detail sketches" style="width:100%">
+    <img src="assets/project2/Detail Sketches.jpg" alt="touch/gesture detail sketches" style="width:100%">
     <div class="text">Touch/Gesture Detail Sketches</div>
   </div>
 
@@ -92,28 +95,33 @@ img {vertical-align: middle;}
 
   
 <hr>
-<h2 style="text-align:center">Topic 2</h2>
-  
+<h2 style="text-align:center">Sensor-Based Unlock</h2>
+<h3>Connect a USB Device to Unlock</h3>
+<div style="display:flex;flex-direction:column;align-items:center;">
 <h3>demo video</h3>
 <video width="718" height="347" autoplay="muted" controls>
-  <source src="h" type="video/mp4">
+  <source src="assets/project2/Sensor Demo.mp4" type="video/mp4">
 </video>
   
 <div>
-  <a href="h" target="_blank">Link to Demo</a>
-  <a href="h" target="_blank">Link to Source Code</a>
+  <a href="https://candy-sweltering-thyme.glitch.me/usb_unlock.html" target="_blank">Link to Demo</a>
+  <a href="https://glitch.com/edit/#!/candy-sweltering-thyme?path=usb_unlock.html%3A1%3A0" target="_blank">Link to Source Code</a>
 </div>
-  
-<p>2nd writeup goes here</p>
+</div>
+<p>I thought of using a physical device to unlock a digital key, and that seemed like an interesting concept. 
+  I had initially started by looking at what sensors are included on phones and can be accessed in a web development environment, but a lot of them are only partially implemented or not at all. 
+  In fact, detection of and communication with USB devices is not supported by iOS devices, and since I don’t have access to an Android device, I had to develop and test using the Chrome browser on MacOS. 
+  I looked into using XCode to create an iOS app with the required functionality, but unfortunately that development environment did not run well on my computer, so I decided to stick to HTML and JavaScript. 
+  Some other issues I ran into were that some USB devices don’t have serial numbers and are forgotten by the browser on disconnect, while some USB devices aren’t recognized by the browser at all.</p>
 <p>Sketches:</p>
 <div class="slideshow-container">
   <div class="mySlides2">
-    <img src="Sensor Sketches.jpg" alt="sensor sketches" style="width:100%">
+    <img src="assets/project2/Sensor Sketches.jpg" alt="sensor sketches" style="width:100%">
     <div class="text">Sensor Sketches</div>
   </div>
 
   <div class="mySlides2">
-    <img src="Sensor Detail.jpg" alt="sensor detail sketches" style="width:100%">
+    <img src="assets/project2/Sensor Detail.jpg" alt="sensor detail sketches" style="width:100%">
     <div class="text">Sensor Detail Sketches</div>
   </div>
 
