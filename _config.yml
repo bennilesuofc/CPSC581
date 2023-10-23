@@ -1,7 +1,7 @@
 # Site settings
-title: CPSC 581 Projects
+title: Benjamin Niles
 author: Benjamin Niles
-description: "Benjamin Niles- Projects for CPSC 581 Fall 2023"
+description: "Projects for CPSC 581 Fall 2023"
 
 # Build settings
 remote_theme: pages-themes/slate@v0.2.0
