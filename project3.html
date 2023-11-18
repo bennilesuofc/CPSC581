@@ -54,11 +54,17 @@ img {vertical-align: middle;}
 <h3>Demo Video</h3>
 <div style="display:flex;flex-direction:column;align-items:center;">
 <h3>demo video</h3>
-<video width="718" height="347" autoplay="muted" controls>
-  <source src="" type="video/mp4">
+<video width="960" height="540" autoplay="muted" controls>
+  <source src="assets/project3/CPSC 581 Project 3 Concept Video.mp4" type="video/mp4">
 </video>
 <p>
- description of device goes here
+ Have you ever told a joke, but no-one laughed? It must be because they didn’t know that the joke was over. The Joke Detector is a device that plays a sting after you tell a joke, so your audience knows when to laugh.
+This device uses an Arduino to listen for a sound input, and when it detects that the sound has stopped, it uses a motor to hit a small drum and cymbal to make the classic “ba-dum-tish” sting.
+During the sketching process, I came up with a few different ways to implement this idea.
+The design I settled on only detects sound, rather than implementing any sort of speech recognition that would actually determine if speech contained a joke or not.
+While this is probably possible to do with a better microphone and computing power, it is beyond the Arduino’s capabilities (and mine).
+I then designed the circuitry and code for the device using Tinkercad (embedded below). My initial plan for the implementation was to use three drumsticks for each hit of the sting. However, this would have required three motors, and when constructing the physical device, I found that the Arduino plus a 9V battery was not enough to power all of these and the sound sensor. I settled for using only the sound sensor and a single small servo motor, both powered directly off of the Arduino.
+Also, Tinkercad does not include a sound sensor in their component list, so I simulated it in the circuit by using a button instead, as both the sensor and the button provide a digital input (1 or 0 only). However, when testing the sound sensor, I found that while it does send a digital input, it does not send a constant input like the button. In particular, it would register input for each word spoken in a sentence but not the spaces between the words, which is not useful for detecting the end of a sentence. I got around this by setting a flag if sound was detected, and then checking every few seconds if sound is still being detected.
 </p>
  <div>
   <a href="" target="_blank">Link to Source Code</a>
@@ -70,34 +76,34 @@ img {vertical-align: middle;}
 <p>Sketches:</p>
 <div class="slideshow-container">
   <div class="mySlides1">
-    <img src="" alt="sketch 1" style="width:100%">
+    <img src="assets/project3/sketches/sketch-1.png" alt="sketch 1" style="width:100%">
   </div>
    <div class="mySlides1">
-    <img src="" alt="sketch 2" style="width:100%">
+    <img src="assets/project3/sketches/sketch-2.png" alt="sketch 2" style="width:100%">
   </div>
    <div class="mySlides1">
-    <img src="" alt="sketch 3" style="width:100%">
+    <img src="assets/project3/sketches/sketch-3.png" alt="sketch 3" style="width:100%">
   </div>
    <div class="mySlides1">
-    <img src="" alt="sketch 4" style="width:100%">
+    <img src="assets/project3/sketches/sketch-4.png" alt="sketch 4" style="width:100%">
   </div>
    <div class="mySlides1">
-    <img src="" alt="sketch 5" style="width:100%">
+    <img src="assets/project3/sketches/sketch-5.png" alt="sketch 5" style="width:100%">
   </div>
    <div class="mySlides1">
-    <img src="" alt="sketch 6" style="width:100%">
+    <img src="assets/project3/sketches/sketch-6.png" alt="sketch 6" style="width:100%">
   </div>
    <div class="mySlides1">
-    <img src="" alt="sketch 7" style="width:100%">
+    <img src="assets/project3/sketches/sketch-7.png" alt="sketch 7" style="width:100%">
   </div>
    <div class="mySlides1">
-    <img src="" alt="sketch 8" style="width:100%">
+    <img src="assets/project3/sketches/sketch-8.png" alt="sketch 8" style="width:100%">
   </div>
    <div class="mySlides1">
-    <img src="" alt="sketch 9" style="width:100%">
+    <img src="assets/project3/sketches/sketch-9.png" alt="sketch 9" style="width:100%">
   </div>
    <div class="mySlides1">
-    <img src="" alt="sketch 10" style="width:100%">
+    <img src="assets/project3/sketches/sketch-10.png" alt="sketch 10" style="width:100%">
   </div>
 
   <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
@@ -106,34 +112,34 @@ img {vertical-align: middle;}
 <p>Detail Sketches:</p>
 <div class="slideshow-container">
   <div class="mySlides2">
-    <img src="" alt="detail sketch 1" style="width:100%">
+    <img src="assets/project3/detail-sketches/detail-sketch-1.png" alt="detail sketch 1" style="width:100%">
   </div>
   <div class="mySlides2">
-    <img src="" alt="detail sketch 2" style="width:100%">
+    <img src="assets/project3/detail-sketches/detail-sketch-2.png" alt="detail sketch 2" style="width:100%">
   </div>
   <div class="mySlides2">
-    <img src="" alt="detail sketch 3" style="width:100%">
+    <img src="assets/project3/detail-sketches/detail-sketch-3.png" alt="detail sketch 3" style="width:100%">
   </div>
   <div class="mySlides2">
-    <img src="" alt="detail sketch 4" style="width:100%">
+    <img src="assets/project3/detail-sketches/detail-sketch-4.png" alt="detail sketch 4" style="width:100%">
   </div>
   <div class="mySlides2">
-    <img src="" alt="detail sketch 5" style="width:100%">
+    <img src="assets/project3/detail-sketches/detail-sketch-5.png" alt="detail sketch 5" style="width:100%">
   </div>
   <div class="mySlides2">
-    <img src="" alt="detail sketch 6" style="width:100%">
+    <img src="assets/project3/detail-sketches/detail-sketch-6.png" alt="detail sketch 6" style="width:100%">
   </div>
   <div class="mySlides2">
-    <img src="" alt="detail sketch 7" style="width:100%">
+    <img src="assets/project3/detail-sketches/detail-sketch-7.png" alt="detail sketch 7" style="width:100%">
   </div>
   <div class="mySlides2">
-    <img src="" alt="detail sketch 8" style="width:100%">
+    <img src="assets/project3/detail-sketches/detail-sketch-8.png" alt="detail sketch 8" style="width:100%">
   </div>
   <div class="mySlides2">
-    <img src="" alt="detail sketch 9" style="width:100%">
+    <img src="assets/project3/detail-sketches/detail-sketch-9.png" alt="detail sketch 9" style="width:100%">
   </div>
   <div class="mySlides2">
-    <img src="" alt="detail sketch 10" style="width:100%">
+    <img src="assets/project3/detail-sketches/detail-sketch-10.png" alt="detail sketch 10" style="width:100%">
   </div>
 
   <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a>
@@ -145,7 +151,7 @@ img {vertical-align: middle;}
 <h3>Concept Video</h3>
 <div style="display:flex;flex-direction:column;align-items:center;">
 <h3>demo video</h3>
-<video width="300" height="400" autoplay="muted" controls>
+<video width="960" height="540" autoplay="muted" controls>
   <source src="" type="video/mp4">
 </video>
   
@@ -153,6 +159,12 @@ img {vertical-align: middle;}
   <a href="" target="_blank">Link to Source Code</a>
 </div>
 </div>
+
+<h3>Tinkercad Circuit</h3>
+<iframe width="725" height="453"
+  src="https://www.tinkercad.com/embed/kIOQzGJEbol?editbtn=1" 
+  frameborder="0" marginwidth="0" marginheight="0" scrolling="no">
+</iframe>
 
 <script>
 let slideIndex = [1,1];
